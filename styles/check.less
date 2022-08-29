@@ -1,0 +1,46 @@
+.check
+{
+  .input-div
+  {
+    padding: 0 !important;
+    input[type='submit'] { border-bottom-left-radius: 0; border-top-left-radius: 0; }
+  }
+
+
+  .diagram
+  {
+    border: solid 3px #E3E3E3; border-radius: 5px; margin: 30px 0 20px 0;
+    text { text-align: center; font-size: 15px; width: 100%; }
+
+    .car-info
+    {
+      border-right: solid 3px #E3E3E3; background: #E3E3E3;
+      .car-name { text-align: center; font-size: 34px; }
+      .car-year { text-align: center; font-size: 22px; padding: 5px 0 0 0; }
+      .car-malfunctions { padding: 5px 0 10px 0; text-align: center; }
+      .car-inputs
+      {
+        .col
+        {
+          padding: 0;
+          .input-div
+          {
+            width: 80%; margin: auto;
+            input { width: 100%; border-radius: 0; }
+          }
+
+        }
+      }
+    }
+    .description
+    {
+      .diagram-title { text-align: center; padding: 10px 0 2px 0; font-weight: bold; }
+      .accordion { padding: 0; border-left: solid 3px  #E3E3E3; }
+      //.diagram-topics { margin-top: 15px; }
+
+      .svg { margin-right: 20px; }
+    }
+
+    .diagram-average { text-align: center; border-bottom: solid 3px #E3E3E3; padding: 10px 0; font-size: 30px; }
+  }
+}

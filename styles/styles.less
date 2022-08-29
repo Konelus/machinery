@@ -1,0 +1,101 @@
+//@bg: #F7F7F7;
+//@bg-elem: #0DCAF0;
+@bg: #212529;
+@bg-elem: #212529;
+
+.debug-select { background: navy; color: gold; }
+.debug-insert { background: black; color: lightgreen; }
+
+body { /** background: #F2F2F2; */ background: #E3E3E3;  cursor: default; header, footer, .btn-info, .btn-info:hover { color: white; } }
+
+header, footer { height: 40px; padding: 8px; }
+
+header
+{
+  padding: 0; background: @bg; margin-bottom: 15px;
+  .label { margin: 0 0 0 10px; }
+  .title { text-align: center; }
+  .label, .title { padding: 5px 0; }
+}
+
+// Алёрты
+.alert { padding: 0; }
+.alert-black { color: white; background: #212529; }
+.alert-danger, .alert-dark, .alert-light, .alert-black { padding: 10px 0; text-align: center; }
+
+
+
+
+
+.content-div
+{
+  padding: 0;
+  .rules, .tests, .tasks, .archive, .test, .feedback, .profile, .check { background: #F7F7F7; padding: 20px; max-height: calc(100vh - 110px); overflow-y: auto; border-radius: 5px; }
+  .svg-alarm, .svg-success { margin: 0 0 2px 2px; }
+  .svg-alarm { color: red; }
+  .svg-success { color: #2EAA31; }
+
+  .test, .feedback, .tests .diagram, .test-average, .tests
+  {
+    .alert-dark { background: #E3E3E3; border: solid 1px #E3E3E3; }
+  }
+
+  .test, .malfunctions_rank
+  {
+    .accordion-body { background: white; padding: 0 40px 15px 40px; }
+    .accordion-button, .accordion-button:focus { background-color: white; border-color: white !important; box-shadow: none; }
+  }
+
+
+
+
+
+
+  .test, .feedback, .tests
+  {
+    .description
+    {
+      padding: 15px 25px; border-radius: 10px;
+      .title { font-weight: bold; text-align: center; padding-bottom: 5px; }
+    }
+  }
+
+  .test .question, .feedback .feedback-div
+  {
+    .input-group-text { border: 0; border-radius: 0; background: #E3E3E3; }
+  }
+}
+
+#modal-login { display: block; }
+#modal-student-add { margin-top: 25px; background: rgba(0,0,0,.2); }
+.modal
+{
+  .modal-header
+  {
+    .row
+    {
+      width: 100%; text-align: center;
+      a { text-decoration: none; color: black; }
+      .title-selected { font-weight: bold; padding-bottom: 2px; border-bottom: solid 1px black; }
+    }
+  }
+
+  .modal-body
+  {
+    padding-bottom: 2px;
+    .label-left
+    {
+      padding: 8px 0 15px 15px; font-weight: bold;
+      .label { padding-bottom: 5px; }
+    }
+    .input-right { padding-left: 0; }
+  }
+
+  .modal-footer
+  {
+    .btn-max { width: 100%; }
+  }
+}
+
+
+footer { position: fixed; bottom: 0; left: 0; width: 100%; background: @bg; text-align: center; z-index: 777; }

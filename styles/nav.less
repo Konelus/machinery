@@ -1,0 +1,53 @@
+@bg: #212529;
+@bg-elem: #212529;
+
+.nav-div
+{
+  padding-left: 0; margin-left: 12px;
+  // Кнопка выхода
+  button { border: 0; width: 100%; text-align: left; background: #E3E3E3; color: black; height: 40px; padding-left: 10px; }
+  button:hover { background: @bg-elem; color: white; }
+
+  li { padding-left: 0; }
+
+  .naw-reg-row
+  {
+    margin: 0;
+    .reg-on-btn-div, .reg-off-btn-div { padding: 0; }
+    .reg-on-btn-div { border-bottom: solid 1px black; }
+
+    .alert { margin: 5px 0; }
+    .col-4, .col-8 { padding: 0; margin-bottom: 2px; }
+    .nav-reg
+    {
+      text-align: center; cursor: pointer; margin-top: 4px;
+      a { color: black !important; }
+      a:hover { color: white !important; }
+      .nav-reg-text { padding: 8px; }
+    }
+
+    .nav-reg-active
+    {
+      padding-bottom: 0; cursor: default !important;
+      .nav-reg-active-text { border-bottom: solid 2px @bg-elem; padding-bottom: 2px; font-weight: bold; }
+    }
+    .nav-reg-active:hover { color: black !important; background: #E3E3E3 !important; }
+
+    .nav-reg-input-div
+    {
+      padding: 5px 0 0 0;
+      .input-group-text { border-top-right-radius: 0; border-bottom-right-radius: 0; width: 80px; background: white; border: solid 2px white; padding: 2px 0 2px 10px; }
+      .form-control { padding: 4px 10px !important; border: 0; border-left: solid 1px #E3E3E3; }
+      .btn-dark { margin-top: 5px; width: 100%; }
+    }
+  }
+
+  .nav-link, li
+  {
+    color: black;
+    a { text-decoration: none; }
+  }
+  .nav-link, button { margin-left: 0; padding-left: 10px; }
+  .nav-link:hover { color: white; background: @bg-elem; }
+  .nav-row-admin { border-top: solid 1px @bg-elem; margin-top: 5px; }
+}

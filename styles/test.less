@@ -1,0 +1,48 @@
+.test
+{
+  .description { text-align: justify; }
+
+  .question
+  {
+    margin: 10px 0; border: solid 3px #E3E3E3;
+    .question-title { padding: 15px 10px; text-align: center; font-weight: bold; border-bottom: solid 3px #E3E3E3; font-size: 18px; }
+    .question-text
+    {
+      padding: 15px; text-align: justify;
+      .question-check , .question-answer { float: left; }
+      .question-check input[type='checkbox'], .question-answer label { cursor: pointer; }
+      .question-check { width: 25px; }
+      .question-answer { width: calc(100% - 55px); }
+    }
+  }
+
+
+  .report
+  {
+    border: solid 3px #212529; margin-bottom: 15px; border-radius: 5px; //padding: 15px;
+    .alert { border-radius: 0; margin: 0; }
+
+    textarea { width: 50%; height: 250px; resize: none; }
+  }
+
+  .auto-info
+  {
+    margin: 10px 0; border: solid 3px #E3E3E3;
+    .col
+    {
+      padding: 15px 15px 20px 15px;
+      .label { text-align: center; margin-bottom: 5px; font-weight: bold; }
+    }
+    span { color: red; }
+    .description
+    {
+      border-top: solid 3px #E3E3E3; text-align: center; border-radius: 0;
+      .left-margin { margin-left: 50px; }
+    }
+  }
+
+  .send-result
+  {
+    .btn { width: 100%; margin-top: 10px; }
+  }
+}
